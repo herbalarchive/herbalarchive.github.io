@@ -29,10 +29,26 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jonathan_auch
 github_username:  herbalarchive
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+
+#permalink: /:title/
+permalink: /:categories/:title/
+
+# Show future posts
+future: true
+
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
